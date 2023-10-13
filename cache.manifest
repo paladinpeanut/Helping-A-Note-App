@@ -1,0 +1,16 @@
+CACHE MANIFEST
+
+# Serial number 1
+
+apple-touch-icon.png
+jquery.js
+scroll-bg.jpg
+startup.png
+medical-log.css
+medical-log.js
+
+NETWORK:
+show-log.php
+insert-into-log.php
+delete-log-entry.php
+update-log-entry.php

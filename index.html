@@ -1,0 +1,57 @@
+<!-- Cache the app locally. -->
+<html manifest="cache.manifest">
+ 
+ <head>
+
+  <title>Medical Log</title>
+ 
+  <!-- Scale to device width. -->
+  <meta name="viewport" content="user-scalable=no, width=device-width" />
+
+  <!-- Allow standalone mode on home screen. -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+ 
+  <!-- Use the default status bar. -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  
+  <!-- Use jQuery for AJAX. -->
+  <script src="./jquery.js"></script>
+
+  <!-- Specify a 320x460 start-up image. -->
+  <link rel="apple-touch-startup-image" href="./startup.png" />
+
+  <!-- Choose a 57x57 image for the icon. -->
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+  <!-- Use CSS to get iPhone styling. -->
+  <style>
+  @import url(medical-log.css) ;
+  </style>
+ 
+ </head>
+
+ <body>
+
+  <div id="add-event-button" class="button">
+   Add New Event
+  </div>
+
+
+  <div id="refresh-button" class="button">
+   Refresh
+  </div>
+
+
+  <table cellspacing="0" cellpadding="0" id="log-table" >  
+   <tbody id="log">
+    <!-- Log table entries generated dynamically. -->
+   </tbody>
+  </table>
+ 
+
+  <!-- Run the application. -->
+  <script src="medical-log.js"></script>
+ 
+ </body>
+
+</html>
